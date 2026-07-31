@@ -42,6 +42,7 @@ src/
   main.jsx        React DOM entry point
 ```
 
+
 ## Design Notes
 
 - **Palette:** ink black, warm paper white, and an antique gold accent —
