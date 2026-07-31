@@ -1,0 +1,48 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  scroll-behavior: smooth;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* Visible, on-brand keyboard focus ring for accessibility */
+:focus-visible {
+  outline: 2px solid #b8912f;
+  outline-offset: 3px;
+  border-radius: 2px;
+}
+
+::selection {
+  background-color: #e9dbb0;
+  color: #0b0b0c;
+}
+
+/* Fine engraved-line texture used behind dark sections, evokes a ledger/law-book page */
+.ledger-texture {
+  background-image: repeating-linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0.035) 0px,
+    rgba(255, 255, 255, 0.035) 1px,
+    transparent 1px,
+    transparent 34px
+  );
+}
+
+.text-balance {
+  text-wrap: balance;
+}
